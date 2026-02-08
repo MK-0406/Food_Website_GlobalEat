@@ -1,0 +1,406 @@
+.back {
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(128, 128, 128, 0.359);
+}
+
+.centered h1 {
+    padding: 0px 15px 0px 15px;
+}
+
+.blog {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    background-size: 100px center;
+    border-radius: 45px;
+    margin: 10px 10px;
+}
+
+.blogger1,
+.blogger3 {
+    flex-direction: row;
+    border: 5px outset rgb(173, 177, 236);
+    margin-bottom: 60px;
+}
+
+.blogger2,
+.blogger4 {
+    right: 0;
+    margin-bottom: 60px;
+    flex-direction: row-reverse;
+    border: 5px inset #bd8de2;
+}
+
+.blog_pic img {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    --c: rgb(28, 70, 104);
+    width: 240px;
+    object-fit: cover;
+    padding: 20px;
+    --_g: rgb(28, 70, 104) 1px, #0000 0 calc(100% - 1px), rgb(28, 70, 104) 0;
+    background:
+        linear-gradient(var(--_g)) 50%/100% var(--_i, 100%) no-repeat,
+        linear-gradient(90deg, var(--_g)) 50%/var(--_i, 100%) 100% no-repeat;
+    outline: 100px solid rgba(0, 0, 0, 0.234);
+    outline-offset: -120px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.blog_pic img:hover {
+    outline: 1px solid rgb(28, 70, 104);
+    outline-offset: -5px;
+    --_i: 88%;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.blog_text {
+    line-height: 22px;
+    font-family: "Roboto", sans-serif;
+    border-radius: 25px;
+    padding-top: 15px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+}
+
+.blog_text h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    line-height: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.blog_text h3 {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: rgb(28, 70, 104);
+    line-height: 20px;
+    padding-bottom: 8px;
+}
+
+.blog_text p {
+    width: 650px;
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-bottom: 25px;
+}
+
+.recommendation {
+    background-color: #ccbfdfb2;
+    justify-content: space-around;
+    border-radius: 30px;
+    display: flex;
+}
+
+.recommendation img {
+    width: auto;
+    height: 120px;
+    border-radius: 10%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recommendation img:hover,
+h4:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recommendation h4 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(28, 70, 104);
+}
+
+
+.food1,
+.food2,
+.food3,
+.food4 {
+    margin: 10px;
+    margin-bottom: 0px;
+    flex-direction: column;
+}
+
+@media(max-width:1024px) {
+    .blog {
+        flex-direction: column;
+        width: 95%;
+        padding: 5px 10px;
+        margin: 15px;
+    }
+
+    .blog_text p {
+        width: 100%;
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .blog_pic img {
+        width: 200px;
+        height: 200px;
+        outline: 80px solid rgba(0, 0, 0, 0.234);
+        outline-offset: -100px;
+        margin: 10px auto;
+    }
+
+    .blog_text h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .blog_text h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .recommendation {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .recommendation img {
+        width: 190px;
+        height: 60%;
+        border-radius: 15%;
+        margin-top: 10px;
+    }
+
+    .recommendation h4 {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+
+    .back {
+        margin-bottom: 10px;
+    }
+
+    .back img {
+        height: auto;
+
+    }
+
+    .food1,
+    .food2,
+    .food3,
+    .food4 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width:768px) {
+    .blog {
+        flex-direction: column;
+        width: 95%;
+        padding: 5px 10px;
+        margin: 15px;
+    }
+
+    .blog_text p {
+        width: 100%;
+        font-size: 16px;
+        padding: 0 15px;
+    }
+
+    .blog_pic img {
+        width: 200px;
+        height: 200px;
+        outline: 80px solid rgba(0, 0, 0, 0.234);
+        outline-offset: -100px;
+        margin: 10px auto;
+    }
+
+    .blog_text h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .blog_text h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .recommendation {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .recommendation img {
+        width: 170px;
+        height: 60%;
+        margin: 10px auto;
+        border-radius: 15%;
+    }
+
+    .back {
+        margin-bottom: 10px;
+    }
+
+    .back img {
+        height: auto;
+    }
+
+    .food1,
+    .food2,
+    .food3,
+    .food4 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .centered h1 {
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog_pic img {
+        width: 150px;
+        height: 150px;
+        padding: 5px;
+        outline: 70px solid rgba(0, 0, 0, 0.234);
+        outline-offset: -100px;
+    }
+
+    .blog_text h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .blog_text h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .blog_text p {
+        font-size: 14px;
+    }
+
+    .blogger3 {
+        margin-top: 1px;
+    }
+
+    .recommendation img {
+        width: 170px;
+        height: auto;
+        margin-top: 10px;
+        border-radius: 12%;
+    }
+
+    .recommendation {
+        flex-direction: column;
+    }
+
+    .recommendation h4 {
+        font-size: 17px;
+        line-height: 20px;
+        margin-top: 1px;
+        margin-bottom: 15px;
+    }
+
+    .food1,
+    .food2,
+    .food3,
+    .food4 {
+        line-height: 2px;
+        margin-bottom: 10px;
+    }
+
+    .centered h1 {
+        font-size: 20px;
+    }
+}
+
+/*Override Header and Footer Bootstrap style*/
+body {
+    background-color: #dbe0eb !important;
+    font-family: "Roboto", sans-serif !important;
+    font-weight: 400 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+nav {
+    position: fixed !important;
+    padding:0 10px !important;
+}
+
+nav .logo{
+    font-size: 50px !important;
+    text-decoration: none !important;
+}
+
+nav .logo:hover {
+    color: white;
+}
+
+nav.scrolled .logo {
+    font-size: 40px !important;
+}
+
+nav ul li{
+    margin-top: 10px;
+    top: 5px;
+}
+
+nav.scrolled ul li a{
+    padding:0 10px !important;
+}
+
+nav ul li a {
+    font-size: 18px !important;
+    padding: 0 12px !important;
+}
+
+  footer ul a {
+    color: #cccccc !important;
+  }
+
+  footer .row h1 {
+    padding-top: 12px !important;
+    font-size: 32px !important;
+  }
+
+  footer .row h2 {
+    padding-top: 2px;
+    font-size: 19.5px;
+    font-weight: bold;
+    padding-bottom: 6px;
+  }
+
+  footer .col h3 {
+    padding-top: 14px;
+    font-size: 15.2px;
+    font-weight: bold;
+    padding-bottom: 7px;
+  }

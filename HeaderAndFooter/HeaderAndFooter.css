@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat:wght@600&family=Young+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    }
+    
+    body { 
+    background-color: #dbe0eb;
+    margin:0;
+    padding:0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    a{
+      color:#ccc;
+      text-decoration: none;
+    }
+
+/* Navigation Bar */
+nav {
+    font-family: "Montserrat", sans-serif;
+    background-image: linear-gradient(to right, #6165c9, #827fe6, #bd8de2);
+    background-position:bottom center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.4s, padding 0.4s;
+    padding:0 10px;
+  }
+  
+  nav.scrolled {
+    background-image: none;
+      background-color: white;
+      padding:0 10px;
+  }
+  
+  nav .logo {
+      float: left;
+      color: white;
+      font-size: 50px;
+      font-weight: bold;
+      padding-top:10px;
+      padding-left: 60px;
+      text-decoration: none;
+  }
+  
+  nav.scrolled .logo {
+      font-size: 40px;
+      padding-top:20px;
+      color: black;
+      transition:0.3;
+  }
+  
+  .navbar .icon{
+    top:30px;
+  }
+  
+  nav.scrolled .icon, nav.scrolled ul li label{
+    color:black;
+  }
+  
+  nav.scrolled ul li a{
+    font-size: 18px;
+    padding:0 10px;
+    color: black;
+  }
+  
+  nav.scrolled ul{
+    color:black;
+  }
+  
+  nav.scrolled ul li a:hover {
+    color:rgb(157, 198, 255);
+  }
+  
+  nav ul li a:active{
+  color:black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(109, 231, 255), 0 0 5px rgb(109, 231, 255);
+  }
+  
+  nav ul {
+      float: right;
+      list-style: none;
+      margin-right: 20px;
+      position: relative;
+  }
+  
+  nav ul li {
+      display: inline-block;
+      font-size:40px;
+      margin: 0 5px;
+      position: relative;
+  }
+  
+  nav ul li a {
+      color: white;
+      text-decoration: none;
+      line-height: 5px;
+      font-size: 18px;
+      padding: 0 12px;
+  }
+  
+  nav ul li a:hover {
+    color: black;
+  }
+  
+  nav ul a:active {
+    color:dodgerblue;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(109, 231, 255), 0 0 5px rgb(109, 231, 255);
+  }
+  
+  .show, .icon, nav input {
+      display: none;
+  }
+  
+  @media (max-width: 1369px) {
+      nav {
+        padding:0 10px;
+      }
+      nav .logo {
+          float: none;
+          padding-left: 0;
+          text-align: left;
+          line-height: 70px;
+      }
+    
+      nav .logo, .icon {
+          display: inline-block;
+      }
+    
+      nav .icon {
+          position: absolute;
+          right: 20px;
+          top: 60px;
+          font-size: 30px;
+          color:#fff;
+      }
+    
+      nav ul {
+          float: none;
+          width: 100%;
+          text-align: left;
+      }
+    
+      nav ul li {
+          display: block;
+          width: 100%;
+          text-align: left;
+      }
+    
+      .show {
+          display: block;
+          color: white;
+          font-size: 18px;
+          padding: 0 20px;
+          line-height: 70px;
+          cursor: pointer;
+      }
+    
+      .show:hover {
+          color: cyan;
+      }
+    
+      .show + a, nav ul {
+          display: none;
+      }
+    
+      #btn:checked + ul {
+          display: block;
+      }
+    
+      nav ul li a {
+          line-height: 40px;
+      }
+    
+      nav ul li a:hover {
+          box-shadow: none;
+      }
+    }
+  
+    @media (min-width: 320px) and (max-width:375px) {
+      nav {
+        padding:0 10px;
+      }
+      nav .logo {
+          font-size: 40px;
+      }
+    }
+
+/* Footer */
+footer {
+    background: rgb(145,174,212);
+    background: linear-gradient(90deg, rgba(28,70,104,1) 0%, rgba(102,119,189,1) 37%, rgba(115,150,198,1) 77%, rgba(149,181,215,1) 100%);
+    width:100%;
+    bottom:0;
+    color: #fff;
+    padding: 10px 0;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  
+  footer .row #logo {
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  footer .row #logo:hover{
+    color:black;
+  }
+  
+  footer .row #logo:active{
+    color:white;
+  }
+  
+  footer .row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  footer .col{
+    flex-basis: 50%;
+    padding: 10px;
+  }
+
+  footer .col h1,
+  footer .col h4{
+    font-family: "Montserrat", sans-serif;
+  }
+
+  
+  footer form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    margin-bottom: 50px;
+  }
+  
+  footer form .far{
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  footer form input{
+    width: 100%;
+    background: transparent;
+    color: white;
+    border:0;
+    outline: none;
+  }
+  
+  footer input::placeholder {
+    color: #0c0c2f59; 
+    opacity: 1; 
+  }
+  
+  footer form button{
+    background: transparent;
+    color:white;
+    font-size:16px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  footer form button:hover{
+    color:black;
+  }
+  
+  footer form button:active{
+    color:aqua;
+  }
+  
+  footer ul li{
+    padding:0px 20px;
+    list-style: none;
+    border-right: 1px solid white;
+    display: inline;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  footer form ul li{
+    color:white;
+  }
+  
+  footer ul li:last-child{
+    border-right: none;
+  }
+  
+  footer ul a:hover{
+    color: black;
+  }
+  
+  footer ul a:active{
+    color:aqua;
+  }
+  
+  footer .social-icons .fab{
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    line-height: 10px;
+    font-size :25px;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+  }
+  
+  .copyright{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  @media (max-width: 700px){
+    footer{
+        bottom:unset;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+  }
+  
+  @media (max-width: 460px){
+    .contact{
+      padding:3rem 0 5rem 0;
+    }
+  
+    .contact_form{
+      margin-left:0;
+    }
+  } 
+  @media (max-width: 320px) {
+    footer {
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+  
+    footer .footer-border {
+        width: 100%;
+        margin: 0 auto; 
+    }
+  }
+  

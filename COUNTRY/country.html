@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Country</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="country_styles.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='../HeaderAndFooter/HeaderAndFooter.css'>
+    <script src='../HeaderAndFooter/HeaderAndFooter.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar header for every webpage-->
+    <nav class="navbar" id="navbar">
+        <a href="../HOME/index.html" class="logo">GlobalEat<i class="ri-restaurant-2-line"></i></a>
+        <label for="btn" class="icon"><span><i class="ri-menu-line"></i></span></label>
+        <input type="checkbox" id="btn">
+        <ul>
+            <li>
+                <a href="../HOME/index.html"><span><i class="ri-home-heart-line"></i></span> Home</a>
+            </li>
+            <li>
+                <a href="../COUNTRY/country.html"><span><i class="ri-earth-line"> </i></span> Country</a>
+            </li>
+            <li>
+                <a href="../CUISINE/cuisine.html"><span><i class="ri-bowl-fill"></i></span> Cuisine</a>
+            </li>
+            <li>
+                <a href="../BLOGGER/blogger.html"><span><i class="ri-blogger-fill"></i></span> Blogger</a>
+            </li>
+            <li>
+                <a href="../CONTACT US/contact.html"><span><i class="ri-contacts-fill"></i></span> Contact</a>
+            </li>
+            <li><a href="https://www.instagram.com/globaleat?igsh=MWtoZnJ1cnp0c3A4&utm_source=qr" target="_blank"
+                    class="nav__social"><i class="ri-instagram-line"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61564047464599&mibextid=LQQJ4d" target="_blank"
+                    class="nav__social"><i class="ri-facebook-box-fill"></i></a></li>
+            <li><a href="https://x.com/globaleat08/status/1824526782999257247?s=48" target="_blank" class="nav__social"><i
+                        class="ri-twitter-x-line"></i></a></li>
+            <li><a href="https://youtube.com/playlist?list=PLIzuEIJBgeJwzmj2ybLgftQ40eciJlnhd&si=V2l9Ir1izmnpM9tG"
+                    target="_blank" class="nav__social"><i class="ri-youtube-line"></i></a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Country Content -->
+    <div class="containers">
+        <div class="country-container">
+            <img src="../IMAGES/background.jpg" alt="Background Image" class="img-fluid">
+            <div class="text-overlay">
+                <h1> Discover Your Destination </h1>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="grid-item1">
+                <div class="image-container">
+                    <img src="../IMAGES/china.jpg" alt="China" class="img-fluid country-image">
+                    <div class="cuisine-container" data-text="Mapo Tofu" data-image="mapotofu.jpg" data-link="mapotofu.html">
+                        <a href="../CUISINE/mapotofu.html" class="cuisine-link">
+                            <img src="../IMAGES/mapotofu.jpg" alt="mapotofu" class="img-fluid cuisine-image">
+                            <div class="cuisine-overlay">MAPO TOFU</div>
+                        </a>
+                    </div>
+                    <div class="cuisine-container" data-text="ZhaJiangMian" data-image="ZhaJiangMian.jpg" data-link="ZhaJiangMian.html">
+                        <a href="../CUISINE/zhajiangmian.html" class="cuisine-link">
+                            <img src="../IMAGES/zhajiangmian.jpg" alt="ZhaJiangMian" class="img-fluid cuisine-image">
+                            <div class="cuisine-overlay">ZHAJIANGMIAN</div>
+                        </a>
+                    </div>
+                    <div class="nav-arrows">
+                        <div class="arrow-container prev-arrow-container">
+                            <span class="prev-arrow">&lt;</span>
+                        </div>
+                        <div class="arrow-container next-arrow-container">
+                            <span class="next-arrow">&gt;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item2">
+                    <div class="grid-header">
+                        <h2>China</h2>
+                        <div class="dropdown">
+                            <button class="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">▼</button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a href="../CUISINE/mapotofu.html">MAPO TOFU</a>
+                                <a href="../CUISINE/zhajiangmian.html">ZHAJIANGMIAN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item1">
+                <div class="image-container">
+                    <img src="../IMAGES/italy.jpg" alt="Italy" class="img-fluid country-image">
+                    <div class="cuisine-container" data-text="PASTA" data-image="pasta.jpg" data-link="pasta.html">
+                        <a href="../CUISINE/pasta.html" class="cuisine-link">
+                            <img src="../IMAGES/pasta.jpg" alt="Pasta" class="img-fluid cuisine-image">
+                            <div class="cuisine-overlay">PASTA</div>
+                        </a>
+                    </div>
+                    <div class="cuisine-container" data-text="PIZZA" data-image="pizza.jpg" data-link="pizza.html">
+                        <a href="../CUISINE/pizza.html" class="cuisine-link">
+                            <img src="../IMAGES/pizza.jpg" alt="Pizza" class="cuisine-image">
+                            <div class="cuisine-overlay">PIZZA</div>
+                        </a>
+                    </div>
+                    <!-- Add more cuisine images as needed -->
+                    <div class="nav-arrows">
+                        <div class="arrow-container prev-arrow-container">
+                            <span class="prev-arrow">&lt;</span>
+                        </div>
+                        <div class="arrow-container next-arrow-container">
+                            <span class="next-arrow">&gt;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item2">
+                    <div class="grid-header">
+                        <h2>Italy</h2>
+                        <div class="dropdown">
+                            <button class="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">▼</button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a href="../CUISINE/pasta.html">PASTA</a>
+                                <a href="../CUISINE/pizza.html">PIZZA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item1">
+                <div class="image-container">
+                    <img src="../IMAGES/japan.jpg" alt="Japan" class="country-image">
+                    <div class="cuisine-container" data-text="chicken_katsu" data-image="chicken_katsu.jpg"
+                        data-link="chicken_katsu.html">
+                        <a href="../CUISINE/chicken_katsu.html" class="cuisine-link">
+                            <img src="../IMAGES/chicken_katsu.jpg" alt="chicken_katsu" class="cuisine-image">
+                            <div class="cuisine-overlay">CHICKEN KATSU</div>
+                        </a>
+                    </div>
+                    <div class="cuisine-container" data-text="sushi" data-image="sushi.jpg" data-link="sushi.html">
+                        <a href="../CUISINE/sushi.html" class="cuisine-link">
+                            <img src="../IMAGES/sushi.jpg" alt="Pizza" class="cuisine-image">
+                            <div class="cuisine-overlay">SUSHI</div>
+                        </a>
+                    </div>
+                    <!-- Add more cuisine images as needed -->
+                    <div class="nav-arrows">
+                        <div class="arrow-container prev-arrow-container">
+                            <span class="prev-arrow">&lt;</span>
+                        </div>
+                        <div class="arrow-container next-arrow-container">
+                            <span class="next-arrow">&gt;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item2">
+                    <div class="grid-header">
+                        <h2>Japan</h2>
+                        <div class="dropdown">
+                            <button class="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">▼</button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a href="../CUISINE/chicken_katsu.html">CHICKEN KATSU</a>
+                                <a href="../CUISINE/sushi.html">SUSHI</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item1">
+                <div class="image-container">
+                    <img src="../IMAGES/korea.jpg" alt="Korea" class="country-image">
+                    <div class="cuisine-container" data-text="Bulgogi" data-image="Bulgogi.jpg"
+                        data-link="Bulgogi.html">
+                        <a href="../CUISINE/bulgogi.html" class="cuisine-link">
+                            <img src="../IMAGES/bulgogi.jpg" alt="Bulgogi" class="cuisine-image">
+                            <div class="cuisine-overlay">BULGOGI</div>
+                        </a>
+                    </div>
+                    <div class="cuisine-container" data-text="Kimchi" data-image="kimchi.jpg" data-link="kimchi.html">
+                        <a href="../CUISINE/kimchi.html" class="cuisine-link">
+                            <img src="../IMAGES/kimchi.jpg" alt="kimchi" class="cuisine-image">
+                            <div class="cuisine-overlay">KIMCHI</div>
+                        </a>
+                    </div>
+                    <!-- Add more cuisine images as needed -->
+                    <div class="nav-arrows">
+                        <div class="arrow-container prev-arrow-container">
+                            <span class="prev-arrow">&lt;</span>
+                        </div>
+                        <div class="arrow-container next-arrow-container">
+                            <span class="next-arrow">&gt;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item2">
+                    <div class="grid-header">
+                        <h2>Korea</h2>
+                        <div class="dropdown">
+                            <button class="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">▼</button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a href="../CUISINE/bulgogi.html">BULGOGI</a>
+                                <a href="../CUISINE/kimchi.html">KIMCHI</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item1">
+                <div class="image-container">
+                    <img src="../IMAGES//malaysia.jpg" alt="Malaysia" class="country-image">
+                    <div class="cuisine-container" data-text="nasi_lemak" data-image="nasi_lemak.jpg"
+                        data-link="nasi_lemak.html">
+                        <a href="../CUISINE/nasi_lemak.html" class="cuisine-link">
+                            <img src="../IMAGES/nasi_lemak.jpg" alt="nasi_lemak" class="cuisine-image">
+                            <div class="cuisine-overlay">COCONUT MILK RICE</div>
+                        </a>
+                    </div>
+                    <div class="cuisine-container" data-text="pisang_goreng" data-image="pisang_goreng.jpg"
+                        data-link="pisang_goreng.html">
+                        <a href="../CUISINE/pisang_goreng.html" class="cuisine-link">
+                            <img src="../IMAGES/pisang_goreng.jpg" alt="Pizza" class="cuisine-image">
+                            <div class="cuisine-overlay">BANANA FRITTER</div>
+                        </a>
+                    </div>
+                    <!-- Add more cuisine images as needed -->
+                    <div class="nav-arrows">
+                        <div class="arrow-container prev-arrow-container">
+                            <span class="prev-arrow">&lt;</span>
+                        </div>
+                        <div class="arrow-container next-arrow-container">
+                            <span class="next-arrow">&gt;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item2">
+                    <div class="grid-header">
+                        <h2>Malaysia</h2>
+                        <div class="dropdown">
+                            <button class="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">▼</button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a href="../CUISINE/nasi_lemak.html">COCONUT MILK RICE</a>
+                                <a href="../CUISINE/pisang_goreng.html">BANANA FRITTER</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item1">
+                <div class="image-container">
+                    <img src="../IMAGES/thailand.jpg" alt="Thailand" class="country-image">
+                    <div class="cuisine-container" data-text="PAD THAI" data-image="padthai.jpg"
+                        data-link="padthai.html">
+                        <a href="../CUISINE/padthai.html" class="cuisine-link">
+                            <img src="../IMAGES/padthai.jpg" alt="Pad Thai" class="cuisine-image">
+                            <div class="cuisine-overlay">PAD THAI</div>
+                        </a>
+                    </div>
+                    <div class="cuisine-container" data-text="TOM YUM GOONG" data-image="tomyumgoong.jpg"
+                        data-link="tomyumgoong.html">
+                        <a href="../CUISINE/tomyumgoong.html" class="cuisine-link">
+                            <img src="../IMAGES/tomyumgoong.jpg" alt="Tom Yum Goong" class="cuisine-image">
+                            <div class="cuisine-overlay">TOM YUM GOONG</div>
+                        </a>
+                    </div>
+                    <!-- Add more cuisine images as needed -->
+                    <div class="nav-arrows">
+                        <div class="arrow-container prev-arrow-container">
+                            <span class="prev-arrow">&lt;</span>
+                        </div>
+                        <div class="arrow-container next-arrow-container">
+                            <span class="next-arrow">&gt;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item2">
+                    <div class="grid-header">
+                        <h2>Thailand</h2>
+                        <div class="dropdown">
+                            <button class="btn btn-light btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" data-bs-display="static" aria-haspopup="true" aria-expanded="false">▼</button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a href="../CUISINE/padthai.html">PAD THAI</a>
+                                <a href="../CUISINE/tomyumgoong.html">TOM YUM GOONG</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll top -->
+    <a href="../COUNTRY/country.html" class="scrool"><i class="ri-arrow-up-line"></i></a>
+
+    <!-- Footer for every page-->
+    <header>
+        <footer class="footer" id="footer">
+            <div class="row">
+                <div class="col">
+                    <a href="../HOME/index.html" id="logo">
+                        <h1>GlobalEat<i class="ri-restaurant-2-line"></i></h1>
+                    </a></li>
+                    <h2>Looking for your next food adventure?</h2>
+                    <p> Join our newsletter for fresh content and more news to explore worldwide food cuisine.
+                        <br>Press the bell icon to get immediate notification of latest videos.
+                    </p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/globaleat?igsh=MWtoZnJ1cnp0c3A4&utm_source=qr"
+                            target="_blank"><i class="fab ri-instagram-line"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61564047464599&mibextid=LQQJ4d"
+                            target="_blank"><i class="fab ri-facebook-box-fill"></i></a>
+                        <a href="https://x.com/globaleat08/status/1824526782999257247?s=48" target="_blank"><i class="fab ri-twitter-x-line"></i></a>
+                        <a href="https://youtube.com/playlist?list=PLIzuEIJBgeJwzmj2ybLgftQ40eciJlnhd&si=V2l9Ir1izmnpM9tG"
+                            target="_blank"><i class="fab ri-youtube-line"></i></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Newsletter</h3>
+                    <form class="mail">
+                        <i class="far ri-mail-line"></i>
+                        <input type="email" placeholder="name@example.com" required>
+                        <button type="submit"><i class="ri-arrow-right-fill"></i><strong>Subscribe!</strong></button>
+                    </form>
+
+                    <ul>
+                        <li><a href="../HOME/index.html">Home <i class="ri-home-heart-line"></i></a>
+                        <li><a href="../COUNTRY/country.html">Country <i class="ri-earth-line"></i></a>
+                        <li><a href="../CUISINE/cuisine.html">Cuisine <i class="ri-bowl-fill"></i></a></li>
+                        <li><a href="../BLOGGER/blogger.html">Blogger <i class="ri-blogger-fill"></i></a></li>
+                        <li><a href="../CONTACT US/contact.html">Contact <i class="ri-contacts-fill"></i></a></li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Make By GlobalEat<i class="ri-restaurant-2-line"></i><br> GlobatEat<i
+                    class="ri-restaurant-2-line"></i> &copy; 2024 </p>
+        </footer>
+    </header>
+
+    <script src="country.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+</body>
+
+</html>
