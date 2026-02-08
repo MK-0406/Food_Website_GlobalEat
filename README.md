@@ -12,7 +12,7 @@ A small static multi-page website project containing content pages for cuisine, 
 - BLOGGER/: blog page and styles
 
 ## Quick Preview
-- Website link: to be updated
+- Website link: [website_link](https://mk-0406.github.io/Food_Website_GlobalEat/)
 
 ### Home Page
 
