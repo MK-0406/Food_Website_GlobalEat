@@ -13,6 +13,8 @@ A small static multi-page website project containing content pages for cuisine, 
 
 ## Quick Preview
 
+Website link: [https://globaleat.netlify.app/](https://globaleat.netlify.app/)
+
 ### Home Page
 
 ![home](IMAGES/home.png)
