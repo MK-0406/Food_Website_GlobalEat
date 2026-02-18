@@ -6,7 +6,7 @@ A small static multi-page website project containing content pages for cuisine, 
 - HOME/: main landing page (index.html, styles and scripts)
 - CUISINE/: various cuisine pages and styles
 - COUNTRY/: country page with styles and script
-- CONTACT US/: contact page with CSS and JS
+- CONTACT-US/: contact page with CSS and JS (renamed from "CONTACT US")
 - HeaderAndFooter/: shared header and footer assets
 - IMAGES/: project images
 - BLOGGER/: blog page and styles
